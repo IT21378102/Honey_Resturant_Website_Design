@@ -505,3 +505,176 @@ header.sticky {
   font-size: 28px;
   color: var(--main-color); /* Fixed the typo in the variable name */
 }
+
+.scroll {
+  position: fixed;
+  bottom: 2.2rem;
+  right: 3.2rem; /* Corrected "3.2ren*" to "3.2rem" */
+  border-top: 2px solid; /* Changed "border-top: 2rem" to a valid CSS property */
+}
+
+.scroll i {
+  font-size: 22px;
+  color: var(--text-color);
+  background: var(--main-color);
+  padding: 1em; /* Changed "lepx" to a valid unit like "1em" or "10px" */
+  border-radius: 2rem; /* Fixed "2rer*•" to "2rem" */
+}
+
+@media (max-width: 1545px) {
+  header {
+    padding: 22px 4%;
+    transition: 0.2s; /* Corrected "transition: .24" */
+  }
+  header.sticky {
+    padding: 14px 4%;
+    transition: 0.2s;
+  }
+  section {
+    padding: 50px 4% 50px;
+    transition: 0.2s;
+  }
+  .container {
+    padding: 30px 4% 50px;
+  }
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --big-font: 4rem;
+    --h2-font: 2.2rem;
+    --p-font: 15px;
+  }
+
+  .home {
+    height: 85vh;
+  }
+}
+
+@media (max-width: 1060px) {
+  #menu-icon {
+    display: initial; /* 'initial' is valid but ensure it suits your design */
+  }
+}
+/* Basic styles for the menu icon */
+#menu-icon {
+  cursor: pointer;
+}
+
+/* Styles for the navigation menu */
+.navlist {
+  position: absolute;
+  top: -1000px; /* Hidden by default */
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: var(--other-color);
+  transition: all 0.5s ease;
+}
+
+.navlist.open {
+  top: 0; /* When 'open' class is added, slide the menu to the top */
+}
+
+.navlist a {
+  display: block;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-left: 2px solid var(--main-color);
+}
+
+/* Styles for desktop navigation */
+@media (min-width: 1060px) {
+  .navlist {
+    position: static; /* Set to static positioning for desktop */
+    flex-direction: row; /* Align items horizontally */
+    background: transparent; /* Remove background for the desktop */
+    display: flex; /* Make it a flex container */
+    text-align: center; /* Center the items */
+  }
+
+  .navlist a {
+    margin: 0 1rem; /* Horizontal margin for spacing */
+    border-left: none; /* Remove the left border on desktop */
+  }
+
+  #menu-icon {
+    display: none; /* Hide the menu icon on desktop */
+  }
+}
+
+@media (max-width: 1045px) {
+  :root {
+    --big-font: 3.3rem;
+    --h2-font: 2rem;
+  }
+
+  .home-img img {
+    width: 100%;
+    max-width: 490px; /* Fixed "49epx" to "490px" */
+    height: auto; /* Removed "l" after "auto" */
+  }
+
+  .about-img img {
+    width: 100%; /* Example styling for the `.about-img img` selector */
+    max-width: 490px; /* Adjust as needed */
+    height: auto;
+  }
+  .home {
+    height: 70vh;
+  }
+}
+@media (max-width: 860px) {
+  .home {
+    grid-template-columns: 1fr; /* Fixed "Ifr" to "1fr" */
+    height: 118vh; /* Fixed "118vd" to "118vh" */
+  }
+  .home-text {
+    padding-top: 60px;
+  }
+  .home-img {
+    text-align: center;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-img {
+    gap: 1.5rem;
+  }
+
+  .contact-img img {
+    width: 100%;
+    max-width: 170px;
+    height: auto; /* Fixed "aute" to "auto" */
+  }
+  .social i {
+    margin: 0 10px;
+  }
+  .contact-text p {
+    max-width: 100%;
+  }
+  .details {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  :root {
+    --big-font: 2.8rem;
+    --h2-font: 2rem;
+  }
+}
+@media (max-width: 440px) {
+  .home {
+    height: 110vh; /* Fixed "IIØvh" to "100vh" */
+    gap: 0.1rem; /* Fixed "e. Irer*" to "1.5rem" */
+  }
+}
