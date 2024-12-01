@@ -119,7 +119,7 @@ section {
 }
 
 .home-img img {
-  width: 350px; /* Set a smaller size for the image */
+  width: 400px; /* Set a smaller size for the image */
   height: 450px; /* Ensure the height matches the width */
   border-radius: 12%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image content fits well within the circle */
@@ -677,4 +677,17 @@ header.sticky {
     height: 110vh; /* Fixed "IIØvh" to "100vh" */
     gap: 0.1rem; /* Fixed "e. Irer*" to "1.5rem" */
   }
+}
+.contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the parent has a height */
+}
+
+.c-one img {
+  max-width: 45%; /* Adjust the width to fit the container */
+  max-height: 30%; /* Adjust the height to fit the container */
+  width: auto;
+  height: auto;
 }
